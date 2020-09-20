@@ -5,21 +5,48 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <Navbar className="nav-bar bg-dark" variant="dark" expand="sm" sticky="top">
-      <Navbar.Brand href="/">Tauan Longaretti</Navbar.Brand>
-      <Nav defaultActiveKey="/">
-        <Nav.Item>
-          <Nav.Link as={Link} eventKey="link-2" to="/about">
-            About
-          </Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link as={Link} eventKey="link-3" to="/projects">
-            Projects
-          </Nav.Link>
-        </Nav.Item>
-      </Nav>
-    </Navbar>
+    <div>
+      <Navbar className="nav-bar mx-3" variant="dark" expand="sm" sticky="top">
+        <Navbar.Brand href="/" className="home-link">
+          Tauan Longaretti
+        </Navbar.Brand>
+        <div className="ml-auto">
+          <Nav defaultActiveKey="/">
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                className="nav-link"
+                eventKey="link-2"
+                to="/about"
+              >
+                About
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                className="nav-link ml-5"
+                eventKey="link-3"
+                to="/projects"
+              >
+                Projects
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                className="nav-link ml-5"
+                eventKey="link-4"
+                to="/contact"
+              >
+                Contact
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </div>
+      </Navbar>
+      <div className="accent-nav"></div>
+    </div>
   );
 };
 
