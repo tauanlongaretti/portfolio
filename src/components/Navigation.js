@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <div>
-      <Navbar className="nav-bar mx-3" variant="dark" expand="sm" sticky="top">
+      <Navbar className="nav-bar mx-4" variant="dark" expand="sm" sticky="top">
         <Navbar.Brand href="/" className="home-link">
           Tauan Longaretti
         </Navbar.Brand>
