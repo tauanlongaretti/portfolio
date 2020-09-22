@@ -26,6 +26,14 @@ const Contact = () => {
   return (
     <div className="form-wrapper">
       <div className="form-container p-4">
+        <div className="form-text">
+          <h1>Contact Me</h1>
+          <p className="mt-4">Thank you for taking the </p>
+          <p>time to reach out.</p>
+          <p className="mt-4">Also feel free to contact </p>
+          <p>me on any of my social </p>
+          <p>media accounts:</p>
+        </div>
         <div className="form-ribbon">
           <form
             className="contact-form d-flex flex-column"
