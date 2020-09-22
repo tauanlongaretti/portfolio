@@ -1,5 +1,7 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 const Contact = () => {
   function sendEmail(e) {
@@ -33,6 +35,8 @@ const Contact = () => {
           <p className="mt-4">Also feel free to contact </p>
           <p>me on any of my social </p>
           <p>media accounts:</p>
+          <LinkedInIcon color="primary"/>
+          <TwitterIcon color="primary"/>
         </div>
         <div className="form-ribbon">
           <form
