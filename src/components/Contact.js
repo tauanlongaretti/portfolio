@@ -35,8 +35,8 @@ const Contact = () => {
           <p className="mt-4">Also feel free to contact </p>
           <p>me on any of my social </p>
           <p>media accounts:</p>
-          <LinkedInIcon className="icon" color="action"/>
-          <TwitterIcon className="icon" color="disabled"/>
+          <a href="https://www.linkedin.com/in/tauan-longaretti-57879b194/"><LinkedInIcon className="icon" color="action"/></a>
+          <a href="https://twitter.com/TauanL10"><TwitterIcon className="icon" href="" color="disabled"/></a>
         </div>
         <div className="form-ribbon">
           <form
@@ -50,8 +50,8 @@ const Contact = () => {
             <label className="text-black mt-2 mb-1">Email</label>
             <input type="email" name="email" />
             <label className="text-black mt-2 mb-1">Message</label>
-            <textarea name="message" />
-            <input className="mt-4" type="submit" value="Send" />
+            <textarea name="message" className="message-input"/>
+            <input className="mt-4 send-button" type="submit" value="Send" />
           </form>
         </div>
       </div>

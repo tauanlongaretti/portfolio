@@ -32,7 +32,7 @@
 }
 
 .light-background {
-  background-color: var(--light-color)
+  background-color: var(--light-color);
 }
 
 .light-text {
@@ -40,11 +40,11 @@
 }
 
 .dark-background {
-  background-color: var(--dark-color)
+  background-color: var(--dark-color);
 }
 
 .dark-text {
-  color: var(--dark-color)
+  color: var(--dark-color);
 }
 
 /* Footer */
@@ -130,7 +130,7 @@
   top: 20px;
   left: 50px;
   text-align: center;
-  font-size:22px;
+  font-size: 22px;
   line-height: 12px;
 }
 
@@ -168,4 +168,24 @@
   color: var(--light-accent) !important;
   margin: 25px 15px;
   font-size: 45px !important;
+}
+
+.message-input {
+  height: 90px;
+  line-height: 18px;
+  padding: 3px 5px;
+  max-height: 120px;
+}
+
+.send-button {
+  background: rgb(189, 166, 93);
+  background: linear-gradient(
+    90deg,
+    rgba(189, 166, 93, 1) 0%,
+    rgba(240, 216, 140, 1) 50%,
+    rgba(189, 166, 93, 1) 100%
+  );
+  font-weight: 600;
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color)
 }
