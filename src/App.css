@@ -163,3 +163,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.icon {
+  color: var(--light-accent) !important;
+  margin: 25px 15px;
+  font-size: 45px !important;
+}

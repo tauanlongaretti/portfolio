@@ -29,14 +29,14 @@ const Contact = () => {
     <div className="form-wrapper">
       <div className="form-container p-4">
         <div className="form-text">
-          <h1>Contact Me</h1>
+          <h1 className="mt-2 pb-2">Contact Me</h1>
           <p className="mt-4">Thank you for taking the </p>
-          <p>time to reach out.</p>
+          <p className="pb-3">time to reach out.</p>
           <p className="mt-4">Also feel free to contact </p>
           <p>me on any of my social </p>
           <p>media accounts:</p>
-          <LinkedInIcon color="primary"/>
-          <TwitterIcon color="primary"/>
+          <LinkedInIcon className="icon" color="action"/>
+          <TwitterIcon className="icon" color="disabled"/>
         </div>
         <div className="form-ribbon">
           <form
