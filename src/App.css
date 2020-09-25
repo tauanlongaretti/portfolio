@@ -212,7 +212,7 @@
 
 /* Home */
 .home-header {
-  line-height: .5;
+  line-height: .6;
   margin-bottom: 30px;
 }
 
@@ -230,7 +230,15 @@
   margin: 10px 15px 0px 0px;
   color: var(--light-color);
   background-color: var(--dark-color);
-  border: 2px solid var(--light-color)
+  border: 2px solid var(--light-color);
+  border-radius: 2px;
+  transition: background-color 0.5s ease-in;
+}
+
+.white-button:hover {
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  font-weight: 500;
 }
 
 .gold-button {
@@ -241,7 +249,15 @@
   margin: 10px 15px 0px 0px;
   color: var(--light-accent);
   background-color: var(--dark-color);
-  border: 2px solid var(--light-accent)
+  border: 2px solid var(--light-accent);
+  border-radius: 2px;
+  transition: background-color 0.5s ease-in;
+}
+
+.gold-button:hover {
+  color: var(--dark-color);
+  background-color: var(--light-accent);
+  font-weight: 500;
 }
 
 .home-right-section {
