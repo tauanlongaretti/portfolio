@@ -28,7 +28,7 @@
 }
 
 .gold-text {
-  color: var(--dark-accent);
+  color: var(--light-accent);
 }
 
 .light-background {
@@ -92,7 +92,7 @@
 }
 
 .home-link {
-  color: var(--dark-accent) !important;
+  color: var(--light-accent) !important;
 }
 
 /* Form */
@@ -187,5 +187,21 @@
   );
   font-weight: 600;
   border: 1px solid var(--dark-color);
-  color: var(--dark-color)
+  color: var(--dark-color);
+}
+
+/* About */
+.about-container {
+  max-width: 1300px;
+}
+
+.paragraph-font {
+  font-size: 20px;
+  width: 800px;
+  text-align: center;
+}
+
+.unordered-list li {
+  margin: 10px 20px;
+  text-align: justify;
 }
