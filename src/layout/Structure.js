@@ -8,7 +8,7 @@ const Structure = () => {
     <div className="component-wrap">
       <Navigation />
       <main className="z-0 pl-8 pr-8 py-5 m-auto">
-        <Routes />
+        <Routes/>
       </main>
       <Footer />
     </div>
