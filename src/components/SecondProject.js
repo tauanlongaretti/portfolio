@@ -1,4 +1,5 @@
 import React from "react";
+import Calcumpare from "../assets/Calcumpare.jpg"
 import { FiArrowRightCircle, FiArrowLeftCircle } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
@@ -9,15 +10,14 @@ const SecondProject = () => {
           <FiArrowLeftCircle className="switch-icon"/>
       </Link>
       <div className="project-container">
-        <h2 className="project-title">Movie Browsing</h2>
+        <h2 className="project-title">Calcumpare</h2>
         <div className="project-ribbon">
-          <img className="project-image" />
+            <a href="https://calcumpare.netlify.app/" target="_blank">
+          <img className="project-image" src={Calcumpare}/></a>
         </div>
-        <h2 className="project-description">
-          A movie library app that provides the user many ways of browsing for a
-          movie. React, Javascript and The Movie Database API were used in the
-          development of this application. "Click Here" or on the image above to
-          view this project.{" "}
+        <h2 className="project-description-two">
+          This application features two different calculators. They return information based on custom inputs for real estate compound interest investments. React, Javascript, Redux, Bootstrap and Figma were used in the development of this application. <a className="hyperlink" href="https://calcumpare.netlify.app/" target="_blank">"Click Here"</a> or on the image above to
+          view this project.
         </h2>
       </div>
       <Link to="third-project" className="link-position">  
