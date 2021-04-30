@@ -2,7 +2,6 @@ import React from "react";
 import emailjs from "emailjs-com";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import TwitterIcon from "@material-ui/icons/Twitter";
-import {FaArrowRight} from "react-icons/fa";
 
 const Contact = () => {
   function sendEmail(e) {

@@ -19,8 +19,15 @@ const FirstProject = () => {
         <h2 className="project-description">
           A movie library app that provides the user many ways of browsing for a
           movie. React, Javascript and The Movie Database API were used in the
-          development of this application. <a className="hyperlink" href="https://moviebrowsing.netlify.app/" target="_blank">"Click Here"</a> or on the image above to
-          view this project.
+          development of this application.{" "}
+          <a
+            className="hyperlink"
+            href="https://moviebrowsing.netlify.app/"
+            target="_blank"
+          >
+            "Click Here"
+          </a>{" "}
+          or on the image above to view this project.
         </h2>
       </div>
       <Link to="second-project" className="link-position">

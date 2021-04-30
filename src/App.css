@@ -377,7 +377,7 @@
   color: var(--light-accent);
 }
 
-a.hyperlink:hover{
+a.hyperlink:hover {
   color: var(--dark-accent) !important;
   text-decoration: none;
 }
