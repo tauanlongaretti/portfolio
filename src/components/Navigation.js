@@ -27,7 +27,7 @@ const Navigation = () => {
                 as={Link}
                 className="nav-link ml-5"
                 eventKey="link-3"
-                to="/projects"
+                to="/first-project"
               >
                 Projects
               </Nav.Link>

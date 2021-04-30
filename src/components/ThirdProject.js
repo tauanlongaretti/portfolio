@@ -2,7 +2,7 @@ import React from "react";
 
 const ThirdProject = () => {
     return <div>
-        <img src={}/>
+        <img />
     </div>
 }
 

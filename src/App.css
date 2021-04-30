@@ -285,10 +285,14 @@
   display: flex;
 }
 
+.link-position {
+  margin: auto 80px;
+}
+
 .switch-icon {
   color: var(--light-accent) !important;
   font-size: 50px !important;
-  margin: auto 80px;
+  
 }
 
 .project-container {
