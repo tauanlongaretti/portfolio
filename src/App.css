@@ -285,10 +285,13 @@
   display: flex;
 }
 
+.link-position {
+  margin: auto 80px;
+}
+
 .switch-icon {
   color: var(--light-accent) !important;
   font-size: 50px !important;
-  margin: auto 80px;
 }
 
 .project-container {
@@ -309,7 +312,7 @@
 .project-image {
   width: 100%;
   height: 100%;
-  border: 2px solid var(--light-color);
+  border: 1px solid var(--light-color);
   border-radius: 5px;
 }
 
@@ -349,4 +352,32 @@
   font-size: 20px;
   color: var(--light-color);
   padding: 30px;
+  text-align: justify;
+}
+
+.project-description-two {
+  position: absolute;
+  top: 443px;
+  font-size: 20px;
+  color: var(--light-color);
+  padding: 30px;
+  text-align: justify;
+}
+
+.project-description-three {
+  position: absolute;
+  top: 435px;
+  font-size: 20px;
+  color: var(--light-color);
+  padding: 30px;
+  text-align: justify;
+}
+
+.hyperlink {
+  color: var(--light-accent);
+}
+
+a.hyperlink:hover {
+  color: var(--dark-accent) !important;
+  text-decoration: none;
 }
