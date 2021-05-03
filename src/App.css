@@ -254,18 +254,16 @@
 
 /* Home */
 .home-wrapper {
-  width: 800px;
+  width: 90%;
   border: 4px solid var(--light-accent);
   border-radius: 15px;
-  transform: skew(-7deg);
   padding-top: 50px;
+  margin: auto;
 }
 
 .profile-picture {
-  margin: -90px 0 0 -10px;
-  height: 400px;
+  width: 100%;
   object-fit: cover;
-  transform: skew(7deg);
 }
 
 .home-header {
@@ -281,7 +279,7 @@
 }
 
 .home-right-section {
-  margin-top: -5px;
+  margin: -5px 15px 0 0;
 }
 
 .white-button {
@@ -320,6 +318,26 @@
   color: var(--dark-color);
   background-color: var(--light-accent);
   font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  .home-wrapper {
+    height: 430px;
+    width: 850px;
+    transform: skew(-7deg);
+  }
+
+  .profile-picture {
+    margin: -110px 0 0 -10px;
+    padding-top: 30px;
+    width: 450px;
+    object-fit: cover;
+    transform: skew(7deg);
+  }
+
+  .home-right-section {
+    margin: 20px 15px 0 0;
+  }
 }
 
 /* Projects */
