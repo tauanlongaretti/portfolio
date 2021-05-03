@@ -7,8 +7,8 @@ const Structure = () => {
   return (
     <div className="component-wrap">
       <Navigation />
-      <main className="z-0 pl-8 pr-8 py-5 m-auto">
-        <Routes/>
+      <main className="z-0 p-3 m-auto">
+        <Routes />
       </main>
       <Footer />
     </div>
