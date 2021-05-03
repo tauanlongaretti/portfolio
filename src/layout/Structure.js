@@ -7,7 +7,7 @@ const Structure = () => {
   return (
     <div className="component-wrap">
       <Navigation />
-      <main className="z-0 m-auto">
+      <main className="z-0 p-3 m-auto">
         <Routes />
       </main>
       <Footer />

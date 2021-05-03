@@ -19,7 +19,7 @@ const Navigation = () => {
   };
   return (
     <div className={`nav-wrapper ${setNavStyle()}`}>
-      <Navbar className="nav-bar mx-4" variant="dark" expand="lg">
+      <Navbar className="nav-bar" variant="dark" expand="lg">
         <Navbar.Brand href="/" className="home-link">
           Tauan Longaretti
         </Navbar.Brand>
