@@ -150,43 +150,55 @@ nav.navbar {
 
 /* Form */
 .form-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
   background-color: var(--dark-color);
-  height: 400px;
-  width: 700px;
+  width: 100%;
   border: 4px solid var(--light-accent);
   border-radius: 15px;
-  transform: skew(-7deg);
+  padding: 1.5rem 0 0 0;
+}
+
+.contact-header {
+  display: none;
+}
+
+.contact-header-mob {
+  font-size: 7.5vw;
+  text-align: center;
+  margin-bottom: 460px;
+}
+
+.form-text {
+  color: var(--light-accent);
+  width: 85vw;
+  text-align: center;
+  font-size: 5.5vw;
+  line-height: 3vw;
+}
+
+.social-buttons {
+  margin-top: -15px;
 }
 
 .form-ribbon {
   position: absolute;
-  width: 300px;
+  width: calc(100% + 28px);
   height: 416px;
   background-color: var(--light-color);
-  top: -12px;
-  left: 340px;
+  left: -14px;
+  top: 10%;
   border-radius: 4px 0px 4px 0px;
-}
-
-.form-text {
-  position: absolute;
-  color: var(--light-accent);
-  width: 250px;
-  top: 20px;
-  left: 50px;
-  text-align: center;
-  font-size: 22px;
-  line-height: 12px;
 }
 
 .form-ribbon:before {
   content: "";
   position: absolute;
-  top: 0;
-  right: -8px;
-  border-top: 4px solid transparent;
-  border-right: 4px solid transparent;
+  top: -6px;
+  right: 0px;
+  border-top: 2px solid transparent;
+  border-right: 6px solid transparent;
   border-bottom: 4px solid #c4c4c4;
   border-left: 4px solid #c4c4c4;
 }
@@ -194,17 +206,17 @@ nav.navbar {
 .form-ribbon:after {
   content: "";
   position: absolute;
-  bottom: 0;
-  left: -8px;
+  bottom: -8px;
+  left: 0px;
   border-top: 4px solid #c4c4c4;
   border-right: 4px solid #c4c4c4;
   border-bottom: 4px solid transparent;
-  border-left: 4px solid transparent;
+  border-left: 6px solid transparent;
 }
 
 .contact-form {
   position: absolute;
-  width: 250px;
+  width: 80%;
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -220,7 +232,10 @@ nav.navbar {
   height: 90px;
   line-height: 18px;
   padding: 3px 5px;
-  max-height: 120px;
+}
+
+input {
+  padding-left: 5px;
 }
 
 .send-button {
@@ -234,6 +249,163 @@ nav.navbar {
   font-weight: 600;
   border: 1px solid var(--dark-color);
   color: var(--dark-color);
+}
+
+@media (min-width: 400px) {
+  .form-text {
+    width: 80vw;
+    font-size: 5vw;
+  }
+
+  .form-ribbon {
+    top: 11.5%;
+  }
+}
+
+@media (min-width: 500px) {
+  .form-container {
+    margin: 3vw 0;
+  }
+  .contact-header-mob {
+    font-size: 40px;
+  }
+
+  .form-ribbon {
+    top: 12.5%;
+  }
+
+  .form-text {
+    font-size: 24px;
+    line-height: 12px;
+  }
+}
+
+@media (min-width: 750px) {
+  .form-container {
+    height: 400px;
+    width: 700px;
+  }
+
+  .contact-header {
+    display: block;
+    margin: 30px 0;
+  }
+
+  .social-buttons {
+    margin-top: -10px;
+  }
+
+  .contact-header-mob {
+    display: none;
+  }
+
+  .form-ribbon {
+    position: absolute;
+    width: 300px;
+    height: 416px;
+    background-color: var(--light-color);
+    top: -12px;
+    left: 340px;
+    border-radius: 4px 0px 4px 0px;
+  }
+  
+  .form-text {
+    position: absolute;
+    color: var(--light-accent);
+    width: 250px;
+    top: 20px;
+    left: 50px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 12px;
+  }
+  
+  .form-ribbon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #c4c4c4;
+    border-left: 4px solid #c4c4c4;
+  }
+  
+  .form-ribbon:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    border-top: 4px solid #c4c4c4;
+    border-right: 4px solid #c4c4c4;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+  
+  .contact-form {
+    position: absolute;
+    width: 250px;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .icon {
+    color: var(--light-accent) !important;
+    margin: 25px 15px;
+    font-size: 45px !important;
+  }
+  
+  .message-input {
+    height: 90px;
+    line-height: 18px;
+    padding: 3px 5px;
+  }
+  
+  input {
+    padding-left: 5px;
+  }
+  
+  .send-button {
+    background: rgb(189, 166, 93);
+    background: linear-gradient(
+      90deg,
+      rgba(189, 166, 93, 1) 0%,
+      rgba(240, 216, 140, 1) 50%,
+      rgba(189, 166, 93, 1) 100%
+    );
+    font-weight: 600;
+    border: 1px solid var(--dark-color);
+    color: var(--dark-color);
+  }
+}
+
+@media (min-width: 992px) {
+  .form-container {
+    height: 430px;
+    width: 850px;
+    transform: skew(-7deg);
+  }
+
+  .form-ribbon {
+    width: 400px;
+    height: 446px;
+    left: 370px;
+  }
+
+  .form-text {
+    top: 35px;
+    left: 58px;
+  }
+
+  .contact-form {
+    width: 300px;
+  }
+
+  .message-input {
+    height: 120px;
+    resize: none;
+  }
 }
 
 /* About */
@@ -251,7 +423,7 @@ nav.navbar {
 }
 
 .about-header {
-  font-size: 7vw;
+  font-size: 7.5vw;
 }
 
 .skills-header {
