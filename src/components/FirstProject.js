@@ -10,7 +10,7 @@ const FirstProject = () => {
         <FiArrowLeftCircle className="switch-icon" />
       </Link>
       <div className="project-container">
-        <h2 className="project-title">Movie Browsing</h2>
+        <h1 className="project-title">Movie Browsing</h1>
         <div className="project-ribbon">
           <a href="https://moviebrowsing.netlify.app/" target="_blank">
             <img className="project-image" src={MovieBrowsing} />
